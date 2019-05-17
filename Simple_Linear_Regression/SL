@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import pandas as pd# library used for importing CSV file 
+import numpy as np
+
+#importing data from CSV file
+data = pd.read_csv("/home/agl173/Passport/Untitled_Folder/Simple_L/Salary_Data.csv")
+type(data)
+X = data[['YearsExperience']]
+Y = data[['Salary']]
+#data.columns
+
+#importing screeing data in training and test 
+from sklearn.model_selection import train_test_split 
+
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size =0.3)
+type(X_train)
+#making relation between dependent and independent variable using LinearR
+from sklearn.linear_model import LinearRegression 
+
+regr = LinearRegression()
+regr.fit(X_train,Y_train)
+Y_pred = regr.predict(X_test)
+#type(Y_test)
+#Y_test = Y_test.values
+ #checking accuracy from pridicted value 
+ 
+from sklearn.metrics import r2_score
+print(r2_score(Y_test,Y_pred))
+
+

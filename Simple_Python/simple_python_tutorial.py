@@ -27,3 +27,34 @@ print(dictionary)
 print(dictionary.keys())
 print(dictionary.values())
 print(dictionary["Name"])
+
+"""
+python has some standard dataType
+~Numbers
+~String
+~List
+~!Tuple
+~Dictionary
+"""
+#Number
+a = 3
+b=4
+print(a,b)
+# it has four type number type 
+'''int 
+float
+long
+complex'''
+#String
+str1 = "ravi kumar"
+str2 = " Kesharwani"
+print(str1+str2)
+print(str1*2)
+print(str1[:])
+
+#List
+''' list are similar to arraylist contain diffrent types of data'''
+list = ["ravi",1,5,"Kesharwani"]
+print(list[0])
+print(list[0:3])
+print(list*2)

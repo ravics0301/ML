@@ -58,3 +58,24 @@ list = ["ravi",1,5,"Kesharwani"]
 print(list[0])
 print(list[0:3])
 print(list*2)
+
+#python for loop
+i = 0
+
+for i  in range(5,10):
+    print(i,end='\n')
+
+#printing a star triangle
+i,j = 0,0    
+for i in range(0,5):
+    for j in range(0,i+1):
+        print("*",end='')
+    print()
+       
+            
+#while loop
+i  = 1
+while i<=10:
+    print(i)
+    i=i+1            
+            
